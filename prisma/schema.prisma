@@ -7,14 +7,15 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
 }
 
 model User {
   id            String    @id @default(cuid())
   email         String    @unique
   name          String?
-  password      String
+  emailVerified DateTime?
+  image         String?
+  password      String?
   role          Role      @default(STUDENT)
   avatar        String?
   courses       Course[]  @relation("Instructor")
@@ -23,6 +24,8 @@ model User {
   quizAttempts  QuizAttempt[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+  
+  @@index([email])
 }
 
 enum Role {
@@ -69,18 +72,19 @@ model Lesson {
 }
 
 model Quiz {
-  id        String     @id @default(cuid())
-  lesson    Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
-  lessonId  String     @unique
-  questions Question[]
+  id          String     @id @default(cuid())
+  lesson      Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lessonId    String     @unique
+  questions   Question[]
+  attempts    QuizAttempt[]
 }
 
 model Question {
-  id            String @id @default(cuid())
-  quiz          Quiz   @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  id            String   @id @default(cuid())
+  quiz          Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
   quizId        String
   text          String
-  options       String
+  options       Json
   correctAnswer Int
   order         Int
 }
