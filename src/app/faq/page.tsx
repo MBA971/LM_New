@@ -25,10 +25,10 @@ export default function FAQ() {
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
-              Find answers to common questions about EduLearn. If you don't see your question here, 
-              please contact our support team.
-            </p>
+             <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+               Find answers to common questions about EduLearn. If you don&apos;t see your question here, 
+               please contact our support team.
+             </p>
           </section>
 
           <section className="mb-16">
@@ -41,17 +41,16 @@ export default function FAQ() {
                   How do I create an account?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Click on the "Sign Up" button on the homepage or navigate to /auth/signup to create 
-                  your account. You'll need to provide your email, name, and a password.
+                  Click on the &quot;Sign Up&quot; button on the homepage or navigate to /auth/signup to create 
+                  your account. You&apos;ll need to provide your email, name, and a password.
                 </p>
               </div>
               <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
                 <h3 className="text-lg font-medium text-slate-900 dark:text-white mb-2">
-                  Is there a free trial?
+                  Are there any free courses available?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Yes! We offer a free plan that gives you access to a selection of free courses. 
-                  You can upgrade to a paid plan at any time to unlock the full course library.
+                  Yes! We offer a variety of free courses across different subjects. Look for the &quot;Free&quot; badge on course cards in our catalog.
                 </p>
               </div>
               <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -59,8 +58,8 @@ export default function FAQ() {
                   How do I enroll in a course?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Once you're logged in, browse the course catalog, click on a course you're interested in, 
-                  and click the "Enroll Now" button. You'll have immediate access to the course content.
+                  Once you&apos;re logged in, browse the course catalog, click on a course you&apos;re interested in, 
+                  and click the &quot;Enroll Now&quot; button. You&apos;ll have immediate access to the course content.
                 </p>
               </div>
             </div>
@@ -95,7 +94,7 @@ export default function FAQ() {
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
                   Quizzes are located at the end of course modules. Simply navigate to the quiz 
-                  section and click "Start Quiz" to begin. You'll receive immediate feedback 
+                  section and click &quot;Start Quiz&quot; to begin. You&apos;ll receive immediate feedback 
                   upon completion.
                 </p>
               </div>
@@ -109,11 +108,11 @@ export default function FAQ() {
             <div className="space-y-4">
               <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
                 <h3 className="text-lg font-medium text-slate-900 dark:text-white mb-2">
-                  I'm having trouble logging in. What should I do?
+                  I&apos;m having trouble logging in. What should I do?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  First, double-check your email and password. If you've forgotten your password, 
-                  click the "Forgot password?" link on the sign-in page to reset it. 
+                  First, double-check your email and password. If you&apos;ve forgotten your password, 
+                  click the &quot;Forgot password?&quot; link on the sign-in page to reset it. 
                   If the problem persists, contact our support team.
                 </p>
               </div>
@@ -148,7 +147,7 @@ export default function FAQ() {
                   Do I receive a certificate upon course completion?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Yes! Upon completing a course, you'll receive a certificate of completion 
+                  Yes! Upon completing a course, you&apos;ll receive a certificate of completion 
                   that you can download and share on your resume or LinkedIn profile.
                 </p>
               </div>

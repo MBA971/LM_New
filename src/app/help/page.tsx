@@ -25,9 +25,9 @@ export default function Help() {
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
               Help & Support
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
-              Need help? We're here for you. Find answers to common questions or get in touch with our support team.
-            </p>
+             <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+               Need help? We&apos;re here for you. Find answers to common questions or get in touch with our support team.
+             </p>
           </section>
 
           <section className="mb-16">
@@ -40,8 +40,8 @@ export default function Help() {
                   How do I enroll in a course?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Simply browse our course catalog, click on a course you're interested in, and click the "Enroll Now" button. 
-                  You'll need to create an account if you don't have one already.
+                  Simply browse our course catalog, click on a course you&apos;re interested in, and click the &quot;Enroll Now&quot; button. 
+                  You&apos;ll need to create an account if you don&apos;t have one already.
                 </p>
               </div>
               <div className="border-b border-slate-200 dark:border-slate-700 pb-4">
@@ -49,7 +49,7 @@ export default function Help() {
                   Are there any free courses?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Yes! We offer a selection of free courses in various subjects. Look for the "Free" badge on course cards.
+                  Yes! We offer a selection of free courses in various subjects. Look for the &quot;Free&quot; badge on course cards.
                 </p>
               </div>
               <div className="border-b border-slate-200 dark:border-slate-700 pb-4">

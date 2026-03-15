@@ -25,10 +25,10 @@ export default function Contact() {
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
               Contact Us
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
-              Have questions or need assistance? We're here to help! Please fill out the form below 
-              and we'll get back to you as soon as possible.
-            </p>
+             <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+               Have questions or need assistance? We&apos;re here to help! Please fill out the form below 
+               and we&apos;ll get back to you as soon as possible.
+             </p>
           </section>
 
           <section className="mb-16">
