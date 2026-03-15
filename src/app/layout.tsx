@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className} min-h-screen bg-slate-50 text-slate-800>
+      <body className={`${inter.className} min-h-screen bg-slate-50 text-slate-800`}>
         <div className="flex min-h-screen">
           {/* Sidebar */}
           <aside className="w-64 bg-white shadow-md hidden md:block">
