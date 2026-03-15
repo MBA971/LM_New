@@ -28,7 +28,7 @@ export default async function Dashboard() {
         email: dbUser.email 
       };
       // Add random progress for each enrollment (for demo purposes)
-      enrollments = dbUser.enrollments?.map(enrollment => ({
+      enrollments = dbUser.enrollments?.map((enrollment: any) => ({
         ...enrollment,
         progress: Math.floor(Math.random() * 100)
       })) ?? [];

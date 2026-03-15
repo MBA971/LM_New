@@ -25,7 +25,8 @@ declare module "next-auth" {
 
 export const authOptions = {
   // Configure one or more authentication providers
-  adapter: PrismaAdapter(prisma) as Adapter,
+  // @ts-ignore
+  adapter: PrismaAdapter(prisma),
   providers: [
     // OAuth authentication providers
     GoogleProvider({
