@@ -187,10 +187,10 @@ export default function Home() {
                     <p className="text-white/60 text-sm">React Developer</p>
                   </div>
                 </div>
-                <p className="text-white/70">
-                  "EduLearn transformed my career. The courses are well-structured and the 
-                  instructors are incredibly knowledgeable. I went from beginner to pro in just 3 months!"
-                </p>
+                  <p className="text-white/70">
+                    &apos;EduLearn transformed my career. The courses are well-structured and the 
+                    instructors are incredibly knowledgeable. I went from beginner to pro in just 3 months!&apos;
+                  </p>
               </div>
               <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
                 <div className="flex items-center mb-4">
@@ -202,10 +202,10 @@ export default function Home() {
                     <p className="text-white/60 text-sm">Data Scientist</p>
                   </div>
                 </div>
-                <p className="text-white/70">
-                  "The Python course was fantastic! The hands-on projects helped me build 
-                  a strong portfolio. I landed my dream job within weeks of completing the course."
-                </p>
+                  <p className="text-white/70">
+                    &apos;The Python course was fantastic! The hands-on projects helped me build 
+                    a strong portfolio. I landed my dream job within weeks of completing the course.&apos;
+                  </p>
               </div>
             </div>
           </div>

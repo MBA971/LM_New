@@ -77,10 +77,10 @@ export default function Help() {
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
               Contact Support
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
-              If you can't find the answer to your question in the FAQ, please don't hesitate to reach out to our 
-              support team.
-            </p>
+             <p className="text-slate-600 dark:text-slate-400 mb-4">
+               If you can&apos;t find the answer to your question in the FAQ, please don&apos;t hesitate to reach out to our 
+               support team.
+             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">

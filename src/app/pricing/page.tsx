@@ -25,10 +25,10 @@ export default function Pricing() {
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">
               Pricing Plans
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
-              Choose the plan that's right for you. All plans include access to our full course library, 
-              progress tracking, and certificates of completion.
-            </p>
+             <p className="text-xl text-slate-600 dark:text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+               Choose the plan that&apos;s right for you. All plans include access to our full course library, 
+               progress tracking, and certificates of completion.
+             </p>
           </section>
 
           <section className="mb-16">
