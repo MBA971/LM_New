@@ -77,16 +77,16 @@ export default function CourseDetail() {
       {/* Lessons Tab Content */}
       <section>
         <div className="space-y-4">
-          <p className="text-slate-600">
-            This comprehensive course covers everything you need to know to start building applications with JavaScript. 
-            From basic syntax to advanced concepts, you'll gain hands-on experience through practical examples and projects.
-          </p>
+           <p className="text-slate-600">
+             This comprehensive course covers everything you need to know to start building applications with JavaScript. 
+             From basic syntax to advanced concepts, you&apos;ll gain hands-on experience through practical examples and projects.
+           </p>
           
           {/* What You'll Learn */}
           <div className="bg-indigo-50 p-4 rounded-lg mb-6">
-            <h3 className="font-semibold mb-2 flex items-center">
-              <span className="mr-2">✓</span> What You'll Learn
-            </h3>
+              <h3 className="font-semibold mb-2 flex items-center">
+                <span className="mr-2">✓</span> What You&apos;ll Learn
+              </h3>
             <ul className="list-disc list-inside space-y-2 text-slate-700">
               <li>JavaScript fundamentals and syntax</li>
               <li>Working with data types, variables, and operators</li>

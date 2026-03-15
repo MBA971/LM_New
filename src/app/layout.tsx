@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,27 +44,18 @@ function Sidebar() {
         <h2 className="text-xl font-bold text-indigo-600">EduLearn</h2>
       </div>
       <nav className="flex-1 space-y-2">
-        <a
-          href="/dashboard"
-          className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600"
-        >
+        <Link href="/dashboard" className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600">
           <MenuIcon className="w-5 h-5 mr-3" />
           Dashboard
-        </a>
-        <a
-          href="/courses"
-          className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600"
-        >
+        </Link>
+        <Link href="/courses" className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600">
           <BookOpenIcon className="w-5 h-5 mr-3" />
           Courses
-        </a>
-        <a
-          href="/profile"
-          className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600"
-        >
+        </Link>
+        <Link href="/profile" className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 hover:text-indigo-600">
           <UserIcon className="w-5 h-5 mr-3" />
           Profile
-        </a>
+        </Link>
       </nav>
       <div className="border-t pt-4">
         <a

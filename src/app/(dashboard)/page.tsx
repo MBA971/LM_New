@@ -4,9 +4,6 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export default async function Dashboard() {
-  // In a real app, we'd get the user from session/auth
-  // For now, we'll show mock data or query from DB
-  
   // Try to get user data, fallback to mock data if not authenticated
   let user = { name: "Demo User", email: "demo@example.com" };
   let enrollments: any[] = [];
@@ -135,35 +132,9 @@ export default async function Dashboard() {
             })}
           </div>
         ) : (
-          <p className="text-slate-500 text-center py-8">
-            You're not enrolled in any courses yet. Browse our catalog to get started!
-          </p>
-        )}
-      </div>
-                <div className="flex-1">
-                  <h3 className="font-medium">{enrollment.course.title}</h3>
-                  <p className="text-sm text-slate-500">
-                    {enrollment.course.description?.substring(0, 100)}...
-                  </p>
-                </div>
-                <div className="text-right space-x-2">
-                  <span className="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs rounded">
-                    {Math.floor(Math.random() * 100)}% Complete
-                  </span>
-                  <Link
-                    href={`/courses/${enrollment.course.id}`}
-                    className="text-sm text-indigo-600 hover:text-indigo-500"
-                  >
-                    Continue
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-slate-500 text-center py-8">
-            You're not enrolled in any courses yet. Browse our catalog to get started!
-          </p>
+           <p className="text-slate-500 text-center py-8">
+             You&apos;re not enrolled in any courses yet. Browse our catalog to get started!
+           </p>
         )}
       </div>
       
