@@ -3,7 +3,9 @@ CREATE TABLE "User" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "email" TEXT NOT NULL,
     "name" TEXT,
-    "password" TEXT NOT NULL,
+    "emailVerified" DATETIME,
+    "image" TEXT,
+    "password" TEXT,
     "role" TEXT NOT NULL DEFAULT 'STUDENT',
     "avatar" TEXT,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -57,7 +59,7 @@ CREATE TABLE "Question" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "quizId" TEXT NOT NULL,
     "text" TEXT NOT NULL,
-    "options" JSONB NOT NULL,
+    "options" TEXT NOT NULL,
     "correctAnswer" INTEGER NOT NULL,
     "order" INTEGER NOT NULL,
     CONSTRAINT "Question_quizId_fkey" FOREIGN KEY ("quizId") REFERENCES "Quiz" ("id") ON DELETE CASCADE ON UPDATE CASCADE
@@ -99,6 +101,9 @@ CREATE TABLE "QuizAttempt" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
+CREATE INDEX "User_email_idx" ON "User"("email");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Quiz_lessonId_key" ON "Quiz"("lessonId");

@@ -1,8 +1,9 @@
-import { PrismaClient } from "@/generated/prisma/client";
-import { config } from "dotenv";
+import { PrismaClient } from "@prisma/client";
 
-// Load environment variables from .env file
-config();
+declare global {
+  var prisma: PrismaClient | undefined;
+}
 
-// Simple Prisma client instance for development and production
-export const prisma = new PrismaClient({ log: ['query'] });
+export const prisma = global.prisma || new PrismaClient();
+
+if (process.env.NODE_ENV !== "production") global.prisma = prisma;

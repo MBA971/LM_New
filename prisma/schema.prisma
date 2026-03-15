@@ -3,11 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
-  output = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -17,7 +17,7 @@ model User {
   emailVerified DateTime?
   image         String?
   password      String?
-  role          Role      @default(STUDENT)
+  role          String    @default("STUDENT")
   avatar        String?
   courses       Course[]  @relation("Instructor")
   enrollments   Enrollment[]
@@ -29,25 +29,19 @@ model User {
   @@index([email])
 }
 
-enum Role {
-  STUDENT
-  TEACHER
-  ADMIN
-}
-
 model Course {
   id           String       @id @default(cuid())
   title        String
   description  String
   thumbnail    String?
   price        Float        @default(0)
-  isPublished Boolean      @default(false)
-  instructor   User         @relation("Instructor", fields: [instructorId], references: [id])
+  isPublished  Boolean     @default(false)
+  instructor   User        @relation("Instructor", fields: [instructorId], references: [id])
   instructorId String
   modules      Module[]
   enrollments  Enrollment[]
-  createdAt    DateTime     @default(now())
-  updatedAt    DateTime     @updatedAt
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
 }
 
 model Module {
@@ -85,7 +79,7 @@ model Question {
   quiz          Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
   quizId        String
   text          String
-  options       Json
+  options       String
   correctAnswer Int
   order         Int
 }
